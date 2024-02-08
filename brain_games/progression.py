@@ -2,7 +2,7 @@ from brain_games.engine import get_rnd_num, run_game
 
 
 def set_rules():
-    print('Find the greatest common divisor of given numbers.')
+    print('What number is missing in the progression?')
 
 
 def get_progression_and_answer():
