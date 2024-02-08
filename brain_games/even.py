@@ -2,7 +2,7 @@ from brain_games.engine import get_rnd_num, run_game
 
 
 def set_rules():
-    print('Answer "yes" if number is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 def check_if_even(num):
