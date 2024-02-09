@@ -10,7 +10,6 @@ def get_gcd(num1, num2):
     return num1
 
 
-
 def get_task_and_answer():
     num1, num2 = get_rnd_num(), get_rnd_num()
     task = f'{num1} {num2}'

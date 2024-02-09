@@ -8,11 +8,12 @@ repository = "https://github.com/ricerockett/python-project-49"
 packages = [
   { include = "brain_games" },
 ]
+
 classifiers = [
-    "Development Status :: 3 - Alpha"
-    "Natural Language :: English"
-    "Programming Language :: Python :: 3.10"
-    "Topic :: Education"
+    "Development Status :: 3 - Alpha",  
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Education",
     "Topic :: Games/Entertainment"
 ]
 
