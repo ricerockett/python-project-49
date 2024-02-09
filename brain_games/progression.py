@@ -1,5 +1,5 @@
 from brain_games.engine import get_rnd_num, play_game
-from brain_games.constants import prime_rule
+from brain_games.constants import progression_rule
 
 
 def get_progression_and_answer():
@@ -17,4 +17,4 @@ def get_progression_and_answer():
 
 
 def start():
-    play_game(prime_rule, get_progression_and_answer)
+    play_game(progression_rule, get_progression_and_answer)
