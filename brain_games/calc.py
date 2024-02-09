@@ -1,5 +1,5 @@
 import random
-from brain_games.engine import get_rnd_num, run_game
+from brain_games.engine import get_rnd_num, play_game
 from brain_games.constants import calc_rule, calc_operations
 
 
@@ -27,4 +27,4 @@ def get_task_and_answer():
 
 
 def start():
-    run_game(calc_rule, get_task_and_answer)
+    play_game(calc_rule, get_task_and_answer)

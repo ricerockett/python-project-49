@@ -1,8 +1,5 @@
-from brain_games.engine import get_rnd_num, run_game
-
-
-def set_rules():
-    print('What number is missing in the progression?')
+from brain_games.engine import get_rnd_num, play_game
+from brain_games.constants import prime_rule
 
 
 def get_progression_and_answer():
@@ -19,5 +16,5 @@ def get_progression_and_answer():
     return task, answer
 
 
-def start_game():
-    run_game(set_rules, get_progression_and_answer)
+def start():
+    play_game(prime_rule, get_progression_and_answer)

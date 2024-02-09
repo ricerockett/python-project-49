@@ -12,6 +12,10 @@ def get_user_name_and_welcome():
     return name
 
 
+def print_rules(rule):
+    print(rule)
+
+
 def get_rnd_num(start=0, end=100):
     return random.randint(start, end)
 
@@ -35,10 +39,10 @@ def compare_answers_and_print_result(correct_answer, player_answer, name):
         return False
 
 
-def run_game(rules, task_and_answer):
+def play_game(rule, task_and_answer):
     greet()
     name = get_user_name_and_welcome()
-    rules()
+    print_rules(rule)
     for i in range(3):
         task, answer = task_and_answer()
         ask_question(task)

@@ -1,8 +1,5 @@
-from brain_games.engine import get_rnd_num, run_game
-
-
-def set_rules():
-    print('Find the greatest common divisor of given numbers.')
+from brain_games.engine import get_rnd_num, play_game
+from brain_games.constants import gcd_rule
 
 
 def get_gcd(num_1, num_2):
@@ -22,4 +19,4 @@ def get_task_and_answer():
 
 
 def start():
-    run_game(set_rules, get_task_and_answer)
+    play_game(gcd_rule, get_task_and_answer)

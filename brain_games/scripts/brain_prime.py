@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-from brain_games.prime import start_game
+from brain_games.prime import start
 
 
 def main():
-    start_game()
+    start()
 
 
 if __name__ == '__main__':

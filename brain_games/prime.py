@@ -1,9 +1,6 @@
-from brain_games.engine import get_rnd_num, run_game
+from brain_games.engine import get_rnd_num, play_game
 import math
-
-
-def set_rules():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+from brain_games.constants import prime_rule
 
 
 def check_if_prime(num):
@@ -20,5 +17,5 @@ def get_task_and_answer():
     return task, answer
 
 
-def start_game():
-    run_game(set_rules, get_task_and_answer)
+def start():
+    play_game(prime_rule, get_task_and_answer)
