@@ -1,5 +1,5 @@
 from brain_games.engine import get_rnd_num, play_game
-from brain_games.constants import even_rule
+from brain_games.constants import EVEN_RULE
 
 
 def check_if_even(num):
@@ -14,4 +14,4 @@ def get_task_and_answer():
 
 
 def start():
-    play_game(even_rule, get_task_and_answer)
+    play_game(EVEN_RULE, get_task_and_answer)

@@ -1,14 +1,16 @@
 from brain_games.engine import get_rnd_num, play_game
-from brain_games.constants import progression_rule
+from brain_games.constants import LOW_TRESHOLD, TOP_TRESHOLD
+from brain_games.constants import PROGRESSION_RULE, MIN_PROGR_LEN
+from brain_games.constants import MAX_PROGR_LEN, MAX_PROGR_STEP
 
 
 def get_progression_and_answer():
-    start = get_rnd_num(0, 100)
-    length = get_rnd_num(5, 15)
-    step = get_rnd_num(0, 10)
-    index = get_rnd_num(0, length)
+    start = get_rnd_num(LOW_TRESHOLD, TOP_TRESHOLD)
+    progr_length = get_rnd_num(MIN_PROGR_LEN, MAX_PROGR_LEN)
+    step = get_rnd_num(LOW_TRESHOLD, MAX_PROGR_STEP)
+    index = get_rnd_num(LOW_TRESHOLD, progr_length)
     progression = []
-    for i in range(length + 1):
+    for i in range(progr_length + 1):
         progression.append(str(start + step * i))
     answer = progression[index]
     progression[index] = '..'
@@ -17,4 +19,4 @@ def get_progression_and_answer():
 
 
 def start():
-    play_game(progression_rule, get_progression_and_answer)
+    play_game(PROGRESSION_RULE, get_progression_and_answer)

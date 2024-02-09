@@ -1,6 +1,6 @@
 from brain_games.engine import get_rnd_num, play_game
 import math
-from brain_games.constants import prime_rule
+from brain_games.constants import PRIME_RULE
 
 
 def check_if_prime(num):
@@ -11,11 +11,11 @@ def check_if_prime(num):
 
 
 def get_task_and_answer():
-    number = get_rnd_num()
-    task = f'{number}'
-    answer = check_if_prime(number)
+    num = get_rnd_num()
+    task = f'{num}'
+    answer = check_if_prime(num)
     return task, answer
 
 
 def start():
-    play_game(prime_rule, get_task_and_answer)
+    play_game(PRIME_RULE, get_task_and_answer)

@@ -1,11 +1,19 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Hexlet 1st learning project 'Brain-games', includes several logical games."
+authors = ["Andrey Gavrilo <gavriloff.andrew@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/ricerockett/python-project-49"
 packages = [
   { include = "brain_games" },
+]
+classifiers = [
+    Development Status :: 3 - Alpha
+    Natural Language :: English
+    Programming Language :: Python :: 3.10
+    Topic :: Education
+    Topic :: Games/Entertainment
 ]
 
 

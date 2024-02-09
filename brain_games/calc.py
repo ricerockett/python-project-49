@@ -1,30 +1,29 @@
 import random
 from brain_games.engine import get_rnd_num, play_game
-from brain_games.constants import calc_rule, calc_operations
+from brain_games.constants import CALC_RULE, CALC_OPERATIONS
 
 
 def get_rnd_operation():
-    return calc_operations[random.randint(0, len(calc_operations) - 1)]
+    return random.choice(CALC_OPERATIONS)
 
 
-def calculate_answer(first_num, second_num, operation):
+def calculate_answer(num1, num2, operation):
     match operation:
         case '+':
-            return str(first_num + second_num)
+            return str(num1 + num2)
         case '-':
-            return str(first_num - second_num)
+            return str(num1 - num2)
         case '*':
-            return str(first_num * second_num)
+            return str(num1 * num2)
 
 
 def get_task_and_answer():
-    first_num = get_rnd_num()
-    second_num = get_rnd_num()
+    num1, num2 = get_rnd_num(), get_rnd_num()
     operation = get_rnd_operation()
-    task = f'{first_num} {operation} {second_num}'
-    answer = calculate_answer(first_num, second_num, operation)
+    task = f'{num1} {operation} {num2}'
+    answer = calculate_answer(num1, num2, operation)
     return task, answer
 
 
 def start():
-    play_game(calc_rule, get_task_and_answer)
+    play_game(CALC_RULE, get_task_and_answer)
