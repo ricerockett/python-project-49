@@ -7,7 +7,7 @@ def get_gcd(num1, num2):
         num1, num2 = num2, num1
     while num2:
         num2, num1 = num1 % num2, num2
-    return num1
+    return str(num1)
 
 
 def get_task_and_answer():
