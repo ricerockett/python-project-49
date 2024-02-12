@@ -6,3 +6,6 @@ __pycache__/
 dist/
 # flake8 linter config
 setup.cfg
+# asciinema casts
+*.cast
+
