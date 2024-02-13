@@ -42,7 +42,7 @@ INSTALLATION INSTRUCTIONS
 USAGE INSTRUCTIONS
 ===============================================================================
 
-  1. To start a game enter the name of the game to a console.
+  1. To start a game enter the name of the game into console e.g. brain-even.
   
 DEINSTALLATION INSTRUCTIONS
 ===============================================================================
