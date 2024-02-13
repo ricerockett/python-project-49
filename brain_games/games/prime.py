@@ -1,6 +1,6 @@
 from brain_games.engine import get_rnd_num
 import math
-from brain_games.constants import PRIME_RULE as RULE
+from brain_games.constants import PRIME_DESCR as DESCRIPTION
 
 
 def check_if_prime(num):

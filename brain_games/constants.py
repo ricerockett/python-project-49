@@ -1,9 +1,9 @@
 # Game rules descriptions
-CALC_RULE = 'What is the result of the expression?'
-EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
-GCD_RULE = 'Find the greatest common divisor of given numbers.'
-PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-PROGRESSION_RULE = 'What number is missing in the progression?'
+CALC_DESCR = 'What is the result of the expression?'
+EVEN_DESCR = 'Answer "yes" if the number is even, otherwise answer "no".'
+GCD_DESCR = 'Find the greatest common divisor of given numbers.'
+PRIME_DESCR = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+PROGRESSION_DESCR = 'What number is missing in the progression?'
 
 # Tresholds for random values
 LOW_TRESHOLD = 0

@@ -1,5 +1,5 @@
 from brain_games.engine import get_rnd_num
-from brain_games.constants import GCD_RULE as RULE
+from brain_games.constants import GCD_DESCR as DESCRIPTION
 
 
 def get_gcd(num1, num2):

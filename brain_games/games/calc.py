@@ -1,6 +1,6 @@
 import random
 from brain_games.engine import get_rnd_num
-from brain_games.constants import CALC_RULE as RULE
+from brain_games.constants import CALC_DESCR as DESCRIPTION
 from brain_games.constants import CALC_OPERATIONS
 
 
