@@ -9,10 +9,6 @@ def get_user_name_and_welcome():
     return name
 
 
-def print_rules(rule):
-    print(rule)
-
-
 def get_rnd_num(start=0, end=100):
     return random.randint(start, end)
 
@@ -38,7 +34,7 @@ def compare_answers_and_print_result(correct_answer, player_answer, name):
 
 def play_game(game_module):
     name = get_user_name_and_welcome()
-    print_rules(game_module.RULE)
+    print(game_module.RULE)
     for i in range(3):
         task, correct_answer = game_module.get_task_and_answer()
         ask_question(task)
