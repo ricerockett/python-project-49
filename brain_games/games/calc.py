@@ -1,6 +1,7 @@
 import random
-from brain_games.engine import get_rnd_num, play_game
-from brain_games.constants import CALC_RULE, CALC_OPERATIONS
+from brain_games.engine import get_rnd_num
+from brain_games.constants import CALC_RULE as RULE
+from brain_games.constants import CALC_OPERATIONS
 
 
 def get_rnd_operation():
@@ -23,7 +24,3 @@ def get_task_and_answer():
     task = f'{num1} {operation} {num2}'
     answer = calculate_answer(num1, num2, operation)
     return task, answer
-
-
-def start():
-    play_game(CALC_RULE, get_task_and_answer)

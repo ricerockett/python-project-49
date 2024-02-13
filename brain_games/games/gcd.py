@@ -1,5 +1,5 @@
-from brain_games.engine import get_rnd_num, play_game
-from brain_games.constants import GCD_RULE
+from brain_games.engine import get_rnd_num
+from brain_games.constants import GCD_RULE as RULE
 
 
 def get_gcd(num1, num2):
@@ -15,7 +15,3 @@ def get_task_and_answer():
     task = f'{num1} {num2}'
     answer = get_gcd(num1, num2)
     return task, answer
-
-
-def start():
-    play_game(GCD_RULE, get_task_and_answer)

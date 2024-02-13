@@ -1,6 +1,7 @@
-from brain_games.engine import get_rnd_num, play_game
+from brain_games.engine import get_rnd_num
 from brain_games.constants import LOW_TRESHOLD, TOP_TRESHOLD
-from brain_games.constants import PROGRESSION_RULE, MIN_PROGR_LEN
+from brain_games.constants import PROGRESSION_RULE as RULE
+from brain_games.constants import MIN_PROGR_LEN
 from brain_games.constants import MAX_PROGR_LEN, MAX_PROGR_STEP
 
 
@@ -16,7 +17,3 @@ def get_progression_and_answer():
     progression[index] = '..'
     task = ' '.join(progression)
     return task, answer
-
-
-def start():
-    play_game(PROGRESSION_RULE, get_progression_and_answer)
