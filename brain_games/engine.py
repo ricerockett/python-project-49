@@ -35,7 +35,7 @@ def compare_answers_and_print_result(correct_answer, player_answer, name):
 def play_game(game_module):
     name = get_user_name_and_welcome()
     print(game_module.DESCRIPTION)
-    for i in range(3):
+    for _ in range(3):
         task, correct_answer = game_module.get_task_and_answer()
         ask_question(task)
         player_answer = get_player_answer()
