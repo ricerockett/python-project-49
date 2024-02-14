@@ -14,21 +14,31 @@ This project was built using these tools:
 DESCRIPTION
 ===============================================================================
 The project contains 5 logical games:
+
   1. brain-even 
-     Computer gives you a number, you should answer "yes" if the number 
-     is even, otherwise answer "no".
-  2. brain-calc
-     Computer gives you a math expression, you should find the result of 
+
+     User gets a number and should answer "yes" if the number is even or
+     "no" otherwise.
+     
+  3. brain-calc
+
+     User gets a math expression and should find the result of 
      this expression.
-  3. brain-gcd
-     Computer gives you a pair of numbers, you should find the greatest 
+     
+  5. brain-gcd
+
+     User gets a pair of numbers and should find the greatest 
      common divisor of given numbers.
-  4. brain-progression
-     Computer gives you an arithmetic progression with one missed number, 
-     you should find missed number.
-  5. brain-prime
-     Computer gives you a number, answer "yes" if given number is prime. 
-     Otherwise answer "no".
+     
+  7. brain-progression
+
+     User gets an arithmetic progression with one missed number and
+     should find missed number.
+     
+  9. brain-prime
+
+     User gets a number and answer "yes" if given number is prime or
+     "no" otherwise.
      
 Each game provides you with 3 question, you have to answer all 3 correctly 
 in order to win. 1 wrong answer consider you loose.
