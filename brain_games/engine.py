@@ -21,17 +21,6 @@ def get_player_answer():
     return prompt.string('Your answer: ')
 
 
-def compare_answers_and_print_result(correct_answer, player_answer, name):
-    if correct_answer == player_answer:
-        print('Correct!')
-        return True
-    else:
-        print(f'"{player_answer}" is wrong answer ;(. '
-              f'Correct answer was "{correct_answer}". \n'
-              f'Let\'s try again, {name}!')
-        return False
-
-
 def play_game(game_module):
     name = get_user_name_and_welcome()
     print(game_module.DESCRIPTION)
