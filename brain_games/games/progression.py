@@ -1,8 +1,10 @@
 from brain_games.engine import get_rnd_num
 from brain_games.constants import LOW_TRESHOLD, TOP_TRESHOLD
-from brain_games.constants import PROGRESSION_DESCR as DESCRIPTION
 from brain_games.constants import MIN_PROGR_LEN
 from brain_games.constants import MAX_PROGR_LEN, MAX_PROGR_STEP
+
+
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_task_and_answer():

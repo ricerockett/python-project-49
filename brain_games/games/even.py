@@ -1,5 +1,7 @@
 from brain_games.engine import get_rnd_num
-from brain_games.constants import EVEN_DESCR as DESCRIPTION
+
+
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def check_if_even(num):

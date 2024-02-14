@@ -1,8 +1,9 @@
 import random
 from brain_games.engine import get_rnd_num
-from brain_games.constants import CALC_DESCR as DESCRIPTION
 from brain_games.constants import CALC_OPERATIONS
 
+
+DESCRIPTION = 'What is the result of the expression?'
 
 def get_rnd_operation():
     return random.choice(CALC_OPERATIONS)

@@ -1,6 +1,8 @@
 from brain_games.engine import get_rnd_num
 import math
-from brain_games.constants import PRIME_DESCR as DESCRIPTION
+
+
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_if_prime(num):
