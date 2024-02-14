@@ -1,4 +1,14 @@
 Brain-games
+[![Actions Status](https://github.com/ricerockett/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ricerockett/python-project-49/actions)
+<a href="https://codeclimate.com/github/ricerockett/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/a67c4008414ace56d86c/maintainability" /></a>
+
+This project was built using these tools:
+
+| Tool                                                                        | Description                                             |
+|-----------------------------------------------------------------------------|---------------------------------------------------------|
+| [poetry](https://python-poetry.org/)                                        | "Python dependency management and packaging made easy"  |
+| [prompt](https://pypi.org/project/prompt/)                                  | "Prompt and verify user input on the command line."     |
+| [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement"                 |
 
 DESCRIPTION
 ===============================================================================
@@ -24,11 +34,12 @@ in order to win. 1 wrong answer consider you loose.
 
 INSTALLATION INSTRUCTIONS
 ===============================================================================
+NOTE: To install and run project you should have poetry installed.
 
   1. Unpack the Brain-games repo archive that you downloaded. 
 
   2. To install the application, open a console, cd into repo root directory 
-     and enter following sequinse of commands:
+     and enter following sequence of commands:
 
        make install
        
@@ -52,11 +63,6 @@ DEINSTALLATION INSTRUCTIONS
 
        make package-uninstall
 
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/ricerockett/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ricerockett/python-project-49/actions)
-
-### Code Climate Maintainability checks:
-<a href="https://codeclimate.com/github/ricerockett/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/a67c4008414ace56d86c/maintainability" /></a>
 
 ### Brain-even asciinema:
 <a href="https://asciinema.org/a/637163" target="_blank"><img src="https://asciinema.org/a/637163.svg" /></a>
