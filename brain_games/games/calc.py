@@ -5,6 +5,7 @@ from brain_games.constants import CALC_OPERATIONS
 
 DESCRIPTION = 'What is the result of the expression?'
 
+
 def get_rnd_operation():
     return random.choice(CALC_OPERATIONS)
 
