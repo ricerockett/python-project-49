@@ -1,6 +1,9 @@
-# Tresholds for random values
-LOW_TRESHOLD = 0
-TOP_TRESHOLD = 100
+# number tasks in game
+TASK_QTY = 3
+
+# Thresholds for random values
+MIN_RND = 0
+MAX_RND = 100
 
 # Supported operations in calc game
 CALC_OPERATIONS = ('+', '-', '*')

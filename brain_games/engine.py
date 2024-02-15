@@ -1,5 +1,5 @@
 import prompt
-import random
+from brain_games import constants
 
 
 def get_user_name_and_welcome():
@@ -9,14 +9,6 @@ def get_user_name_and_welcome():
     return name
 
 
-def get_rnd_num(start=0, end=100):
-    return random.randint(start, end)
-
-
-def ask_question(given_data):
-    print(f'Question: {given_data}')
-
-
 def get_player_answer():
     return prompt.string('Your answer: ')
 
@@ -24,9 +16,9 @@ def get_player_answer():
 def play_game(game_module):
     name = get_user_name_and_welcome()
     print(game_module.DESCRIPTION)
-    for _ in range(3):
+    for _ in range(constants.TASK_QTY):
         task, correct_answer = game_module.get_task_and_answer()
-        ask_question(task)
+        print(f'Question: {task}')
         player_answer = get_player_answer()
         if correct_answer == player_answer:
             print('Correct!')
@@ -34,6 +26,5 @@ def play_game(game_module):
             print(f'"{player_answer}" is wrong answer ;(. '
                   f'Correct answer was "{correct_answer}". \n'
                   f'Let\'s try again, {name}!')
-            break
-    else:
-        print(f'Congratulations, {name}!')
+            return
+    print(f'Congratulations, {name}!')

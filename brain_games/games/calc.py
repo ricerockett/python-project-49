@@ -1,13 +1,8 @@
 import random
-from brain_games.engine import get_rnd_num
-from brain_games.constants import CALC_OPERATIONS
+from brain_games import constants
 
 
 DESCRIPTION = 'What is the result of the expression?'
-
-
-def get_rnd_operation():
-    return random.choice(CALC_OPERATIONS)
 
 
 def calculate_answer(num1, num2, operation):
@@ -21,8 +16,9 @@ def calculate_answer(num1, num2, operation):
 
 
 def get_task_and_answer():
-    num1, num2 = get_rnd_num(), get_rnd_num()
-    operation = get_rnd_operation()
+    num1 = random.randint(constants.MIN_RND, constants.MAX_RND)
+    num2 = random.randint(constants.MIN_RND, constants.MAX_RND)
+    operation = random.choice(constants.CALC_OPERATIONS)
     task = f'{num1} {operation} {num2}'
     answer = calculate_answer(num1, num2, operation)
     return task, answer

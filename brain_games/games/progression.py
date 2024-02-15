@@ -1,17 +1,17 @@
-from brain_games.engine import get_rnd_num
-from brain_games.constants import LOW_TRESHOLD, TOP_TRESHOLD
-from brain_games.constants import MIN_PROGR_LEN
-from brain_games.constants import MAX_PROGR_LEN, MAX_PROGR_STEP
+import random
+from brain_games import constants
 
 
 DESCRIPTION = 'What number is missing in the progression?'
 
 
 def get_task_and_answer():
-    start = get_rnd_num(LOW_TRESHOLD, TOP_TRESHOLD)
-    progr_length = get_rnd_num(MIN_PROGR_LEN, MAX_PROGR_LEN)
-    step = get_rnd_num(LOW_TRESHOLD, MAX_PROGR_STEP)
-    index = get_rnd_num(LOW_TRESHOLD, progr_length)
+    start = random.randint(constants.MIN_RND, constants.MAX_RND)
+    progr_length = random.randint(constants.MIN_PROGR_LEN,
+                                  constants.MAX_PROGR_LEN)
+    step = random.randint(constants.MIN_RND,
+                          constants.MAX_PROGR_STEP)
+    index = random.randint(constants.MIN_RND, progr_length)
     progression = []
     for i in range(progr_length + 1):
         progression.append(str(start + step * i))

@@ -1,4 +1,5 @@
-from brain_games.engine import get_rnd_num
+import random
+from brain_games import constants
 
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
@@ -13,7 +14,8 @@ def get_gcd(num1, num2):
 
 
 def get_task_and_answer():
-    num1, num2 = get_rnd_num(), get_rnd_num()
+    num1 = random.randint(constants.MIN_RND, constants.MAX_RND)
+    num2 = random.randint(constants.MIN_RND, constants.MAX_RND)
     task = f'{num1} {num2}'
     answer = get_gcd(num1, num2)
     return task, answer
