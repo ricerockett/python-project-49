@@ -11,7 +11,9 @@ This project was built using these tools:
 | [prompt](https://pypi.org/project/prompt/)                                  | "Prompt and verify user input on the command line."     |
 | [flake8](https://flake8.pycqa.org/)                                         | "Your tool for style guide enforcement"                 |
 
-## DESCRIPTION
+
+### DESCRIPTION
+
 The project contains 5 logical games:
 
   1. brain-even 
@@ -19,22 +21,22 @@ The project contains 5 logical games:
      User gets a number and should answer "yes" if the number is even or
      "no" otherwise.
      
-  3. brain-calc
+  2. brain-calc
 
      User gets a math expression and should find the result of 
      this expression.
      
-  5. brain-gcd
+  3. brain-gcd
 
      User gets a pair of numbers and should find the greatest 
      common divisor of given numbers.
      
-  7. brain-progression
+  4. brain-progression
 
      User gets an arithmetic progression with one missed number and
      should find missed number.
      
-  9. brain-prime
+  5. brain-prime
 
      User gets a number and answer "yes" if given number is prime or
      "no" otherwise.
@@ -42,7 +44,9 @@ The project contains 5 logical games:
 Each game provides you with 3 question, you have to answer all 3 correctly 
 in order to win. 1 wrong answer consider you loose.
 
-## INSTALLATION INSTRUCTIONS
+
+### INSTALLATION INSTRUCTIONS
+
 NOTE: To install and run project you should have poetry installed.
 
   1. Unpack the Brain-games repo archive that you downloaded. 
@@ -59,10 +63,11 @@ NOTE: To install and run project you should have poetry installed.
      This will initialize poetry environment, building a package from source 
      code and further installation of the package.
 
-## USAGE INSTRUCTIONS
+### USAGE INSTRUCTIONS
 
   1. To start a game enter the name of the game into console e.g. brain-even.
-## DEINSTALLATION INSTRUCTIONS
+
+### DEINSTALLATION INSTRUCTIONS
   
   1. To uninstall the application, open a console, cd into repo root directory 
      and enter following command:
@@ -70,17 +75,17 @@ NOTE: To install and run project you should have poetry installed.
        make package-uninstall
 
 
-### Brain-even asciinema:
+#### Brain-even asciinema:
 <a href="https://asciinema.org/a/637163" target="_blank"><img src="https://asciinema.org/a/637163.svg" /></a>
 
-### Brain-calc asciinema:
+#### Brain-calc asciinema:
 <a href="https://asciinema.org/a/R0KTCyZn9Ygpaofm1fmsABzTM" target="_blank"><img src="https://asciinema.org/a/R0KTCyZn9Ygpaofm1fmsABzTM.svg" /></a>
 
-### Brain-GCD asciinema:
+#### Brain-GCD asciinema:
 <a href="https://asciinema.org/a/Jr2dgVHPkc5s6VJw4joSGmdnC" target="_blank"><img src="https://asciinema.org/a/Jr2dgVHPkc5s6VJw4joSGmdnC.svg" /></a>
 
-### Brain-progression asciinema:
+#### Brain-progression asciinema:
 <a href="https://asciinema.org/a/3A3haOPKMP5o3nRslcYPH2CwY" target="_blank"><img src="https://asciinema.org/a/3A3haOPKMP5o3nRslcYPH2CwY.svg" /></a>
 
-### Brain-prime asciinema:
+#### Brain-prime asciinema:
 <a href="https://asciinema.org/a/V7Oc7ApdwM4CBMVLqQHjAVPLc" target="_blank"><img src="https://asciinema.org/a/V7Oc7ApdwM4CBMVLqQHjAVPLc.svg" /></a>
