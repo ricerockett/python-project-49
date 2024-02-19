@@ -9,17 +9,13 @@ def get_user_name_and_welcome():
     return name
 
 
-def get_player_answer():
-    return prompt.string('Your answer: ')
-
-
 def play_game(game_module):
     name = get_user_name_and_welcome()
     print(game_module.DESCRIPTION)
     for _ in range(constants.TASK_QTY):
         task, correct_answer = game_module.get_task_and_answer()
         print(f'Question: {task}')
-        player_answer = get_player_answer()
+        player_answer = prompt.string('Your answer: ')
         if correct_answer == player_answer:
             print('Correct!')
         else:
